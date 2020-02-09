@@ -5,8 +5,26 @@ div{
     margin:10px;
 }
 .container.main{
+    margin-right: 0;
     margin-top:7em;
 }
 #delete{
     display:inline;
+}
+
+.blogs .img-responsive{
+    margin-top:5%;
+    height: 50%;
+    max-width: 100%;
+    position: fixed;
+}
+
+.blogs .image{
+    position: fixed;
+}
+
+.blog-image button{
+    top: 550px;
+    left: 150px;
+    position: fixed;
 }

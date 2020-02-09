@@ -7,7 +7,8 @@ mongoose = require("mongoose"),
 
 mongoose.connect("mongodb://localhost:27017/restful_blog_app", { useNewUrlParser: true });
 app.set("view engine", "ejs");
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/public"));
+app.use('/public/img/', express.static('./public/img'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressSanitizer());
 app.use(methodOverride("_method"));
